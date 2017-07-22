@@ -1,0 +1,8 @@
+[Slack Config]
+SLACK_BOT_TOKEN = replace with slack bot token
+BOT_ID = replace with slack bot id
+
+[Sonarr Config]
+apikey = replace with api key from sonarr
+host = replace with sonarr host, eg 192.168.1.5, localhost etc
+port = replace with port sonarr is running on
