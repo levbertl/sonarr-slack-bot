@@ -1,10 +1,13 @@
 import os
+import ConfigParser
 from slackclient import SlackClient
 
+config = ConfigParser.ConfigParser()
+config.readfp(open(r'config.txt'))
 
 BOT_NAME = 'tvbot'
-
-slack_client = SlackClient("xoxb-215156189698-Qc8iydfRlnRWCuWkyvnD8L36")
+SLACK_BOT_TOKEN = config.get('Slack Config', 'SLACK_BOT_TOKEN')
+slack_client = SlackClient(SLACK_BOT_TOKEN)
 
 if __name__ == "__main__":
     api_call = slack_client.api_call("users.list")
