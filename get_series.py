@@ -1,5 +1,3 @@
-import os
-import sys
 from urllib2 import urlopen
 import json
 import ConfigParser

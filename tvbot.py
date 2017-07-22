@@ -1,4 +1,3 @@
-import os
 import time
 import ConfigParser
 from slackclient import SlackClient
